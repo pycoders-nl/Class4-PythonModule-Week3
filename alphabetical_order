@@ -1,0 +1,17 @@
+# 3-alphabetical_order.py
+# Write a function that takes an input form user which separates the words
+# hyphen icon(-) and sort the words alphabetical order and then adds hyphen 
+# icon (-) between them and gives the output of it.
+# Input  >>> green-red-yellow-black-white
+# Output >>> black-green-red-white-yellow 
+
+def alphabetical_order():
+    words=input("Enter some words separetely: ")
+    words_list=words.lower().split(" ")
+    words_list_alphabetical=sorted(words_list)
+    words_in_order=""
+    for i in words_list_alphabetical:
+        words_in_order+=i+"-"
+    print(words_in_order[:-1])
+
+alphabetical_order()
