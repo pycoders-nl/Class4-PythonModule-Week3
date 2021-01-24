@@ -1,0 +1,14 @@
+# hackerrank  Find Digits   Complete the findDigits function below.
+
+def findDigits(n):
+    t=str(n)
+    k=0
+    for i in range(len(t)):
+        if int(t[i])==0:
+            continue
+        elif n%int(t[i])==0:
+            k+=1
+        else:
+            pass
+    # print(k)
+    return k 
