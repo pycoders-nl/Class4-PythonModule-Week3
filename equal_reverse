@@ -1,0 +1,19 @@
+# 5-equal_reverse.py
+# Write a function that controls the given inputs wheter they are equal with their reverse writing or not.
+# Input  >>> madam, tacocat, utrecht 
+# Output >>> True, True, False
+
+def equal_reverse ():
+    word=input("Type some words separately: ")
+    word_list=list(word.split(" "))
+    result_list=[]
+    for i in word_list:
+        if len(i)%2==0 and i[:int(len(i)/2)][::-1]==i[int(len(i)/2):]:
+            print("True")
+        elif len(i)%2==0 and i[:int(len(i)/2)][::-1]!=i[int(len(i)/2):]:
+            print("False")
+        elif len(i)%2==1 and i[:int(len(i)//2)][::-1]==i[int(len(i)//2)+1:]:
+            print("True")
+        elif len(i)%2==1 and i[:int(len(i)//2)][::-1]!=i[int(len(i)//2)+1:]:
+            print("False")
+equal_reverse()
