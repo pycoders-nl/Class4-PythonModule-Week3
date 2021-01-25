@@ -1,8 +1,8 @@
 # 2.reading_number     28---------------->Twenty Eight
 
-onlar=["twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"]
-birler=["one","two","three","four","five","six","seven","eight","nine"]
-ten=["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]
+tens=["twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"]
+ones=["one","two","three","four","five","six","seven","eight","nine"]
+teen=["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]
 
 def number_written():
 
@@ -11,12 +11,12 @@ def number_written():
     a2=a//10
 
     if 9<a<20:
-        print("{}---------------->{}".format(a,ten[a1]))        
+        print("{}---------------->{}".format(a,teen[a1]))        
     elif 19<a<100:
         if a1==0:
-            print("{}---------------->{}".format(a,onlar[a1]))        
+            print("{}---------------->{}".format(a,tens[a1]))        
         else:
-            print("{}---------------->{}".format(a,onlar[a2-2]+" "+birler[a1-1]))        
+            print("{}---------------->{}".format(a,tens[a2-2]+" "+ones[a1-1]))        
     else:
         print("Please  enter a correct number!")
 
