@@ -14,7 +14,7 @@ def number_written():
         print("{}---------------->{}".format(a,teen[a1]))        
     elif 19<a<100:
         if a1==0:
-            print("{}---------------->{}".format(a,tens[a1]))        
+            print("{}---------------->{}".format(a,tens[a2-2]))        
         else:
             print("{}---------------->{}".format(a,tens[a2-2]+" "+ones[a1-1]))        
     else:
