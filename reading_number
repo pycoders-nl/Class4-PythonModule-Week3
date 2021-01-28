@@ -1,0 +1,23 @@
+# 2.reading_number     28---------------->Twenty Eight
+
+tens=["twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"]
+ones=["one","two","three","four","five","six","seven","eight","nine"]
+teen=["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]
+
+def number_written():
+
+    a=int(input("Enter a two digit number "))
+    a1=a%10
+    a2=a//10
+
+    if 9<a<20:
+        print("{}---------------->{}".format(a,teen[a1]))        
+    elif 19<a<100:
+        if a1==0:
+            print("{}---------------->{}".format(a,tens[a2-2]))        
+        else:
+            print("{}---------------->{}".format(a,tens[a2-2]+" "+ones[a1-1]))        
+    else:
+        print("Please  enter a correct number!")
+
+number_written()

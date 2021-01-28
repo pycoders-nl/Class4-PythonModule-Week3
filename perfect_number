@@ -1,0 +1,21 @@
+# 1-perfect_number.py
+# 1-The smallest perfect number is 6, which is the sum of 1, 2, and 3.
+# Other perfect numbers are 28(1+2+4+7+14=28), 496 and 8128.  between 1 and 1000.
+# numbers between 1 and 1000 and find the sum of the prime numbers using with reduce and filter functions.
+
+def perfect_numbers():
+
+    a=1000
+    b=[]
+    for i in range(1,a+1):
+        b.append(i)
+
+    for i in b:
+        t=0
+        for k in range(1,i):
+            if i%k==0:
+                t+=k
+        if t==i:
+            print(t)
+
+perfect_numbers()
